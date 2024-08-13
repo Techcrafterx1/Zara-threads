@@ -1,0 +1,55 @@
+.products {
+    /* height: 160vh; */
+    padding: .5rem 2rem;
+    background-image: linear-gradient(205deg, white, wheat, wheat);
+}
+
+.products h2 {
+    font-size: 5rem;
+    color: blueviolet;
+    text-align: center;
+    margin: 2rem .1rem;
+}
+
+.products ul {
+    display: flex;
+    box-shadow: 0 1rem 1rem #0007;
+    height: 4rem;
+    font-size: 2.3rem;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #ff55552e;
+}
+
+.products li {
+    cursor: pointer;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-right: .3rem solid ;
+    border-bottom: .3rem solid ;
+    box-sizing: content-box;
+}
+
+.products li.active {
+    border-bottom: .1rem solid ;
+    border-right: .1rem solid ;
+
+}
+
+.products_container {
+    border: .2rem solid silver;
+    border-top: none;
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+}
+
+.products_container > div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 300%;
+}
+
+.products_container > div > div {
+    width: 33.3333%;
+    
+}

@@ -1,0 +1,60 @@
+.latest {
+    background-image: radial-gradient(circle at 25% 25%, white, pink, pink);
+    height: 150vh;
+    padding: 8rem;
+}
+
+.latest_new,
+.latest_top {
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.latest_top {
+    height: 40%;
+}
+
+.latest_new > h4,
+.latest_top > h4 {
+    font-size: 5.5rem;
+    color: blueviolet;
+}
+
+.latest_new-content,
+.latest_top-content {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    
+}
+
+.latest_new-btn {
+    width: 100%;
+    display: flex;
+    place-content: center;
+    place-items: center;
+}
+
+.latest_new-btn > a {
+    width: max-content;
+    padding: 2rem;
+    background-image: radial-gradient(circle at 10% 10%, palevioletred, blueviolet);
+    border-radius: 20rem;
+    font-size: 2.4rem;
+    color: antiquewhite;
+    font-family: Arial, Helvetica, sans-serif;
+    align-content: center;
+    transition: all .3s;
+}
+
+.latest_new-btn > a:hover {
+    transform: scale(1.2);
+}
+
+.latest_new-btn >a:active {
+    transform: scale(.9);
+}

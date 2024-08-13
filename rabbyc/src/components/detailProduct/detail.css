@@ -1,0 +1,48 @@
+.detailP {
+    display: flex;
+    place-items: center;
+    aspect-ratio: 20/9;
+    height: 20rem;
+    background-color: antiquewhite;
+    border-radius: 1rem;
+    box-shadow: 0 .4rem 1rem #0007;    
+    transition: all .3s, transform .3s;
+}
+
+.detailP > figure {
+    aspect-ratio: 1/1;
+    width: 40%;
+    height: 100%;
+}
+
+.detailP > .content {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    justify-content: space-around;
+    text-shadow: .3rem .4rem 1rem #0008;
+    color: palevioletred;
+}
+
+.detailP h3 {
+    font-size: 2.8rem;
+}
+
+.detailP h4 {
+    font-size: 2.3rem;
+}
+
+.detailP h5 {
+    color: blueviolet;
+    letter-spacing: .2rem;
+    font-size: 1.6rem;
+}
+
+.detailP:hover {
+    box-shadow: .5rem .5rem 1.2rem #0008;
+    transform: scale(1.05);
+}

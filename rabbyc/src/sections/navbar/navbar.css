@@ -1,0 +1,99 @@
+.nav {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10rem;
+    background-color: rgba(255, 192, 203, 0.535);
+    z-index: 999;
+    box-shadow: 0 0 1rem #0005;
+}
+
+.nav-logo {
+    box-shadow: 0 0 1rem #0005;
+    border-radius: 0 0 50% 0;
+    width: 50rem;
+    aspect-ratio: 1/1;
+    border: 1px solid plum;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* display: grid; */
+    /* grid-template-columns: repeat(2, 1fr); */
+    /* grid-template-rows: repeat(2, 1fr); */
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: pink;
+    /* background: radial-gradient(blue, #f55, pink purple); */
+    z-index: 990;
+}
+
+.nav-logo img {
+    width: 15rem;
+    height: auto;
+    top: 60%;
+    left: 55%;
+    position: absolute;
+}
+
+.nav-body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 1rem;
+    width: 75%;
+    height: 100%;
+}
+
+.nav-body_searchbar {
+    display: flex;
+    background-color: #fff;
+    border-radius: .8rem;
+    margin: auto;
+}
+
+.nav-body_searchbar input {
+    border: none;
+    outline: none;
+    font-size: 1.3rem;
+    height: 2rem;
+    width: 100%;
+    border-radius: .8rem;
+    padding: .3rem 1rem;
+    font-family: cursive;
+}
+
+.nav-body_searchbar svg {
+    margin-top: .2rem;
+    margin-left: .8rem;
+}
+
+.nav-body_list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: rgb(206, 10, 206);
+    text-shadow: .1rem .1rem 1rem #0005;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.nav-body_list li:hover {
+    transform: scale(1.15);
+    transition: all .5s;
+}
+
+.nav-body_list li:active {
+    transform: scale(.8);
+}
+
+.nav-menu_btn {
+    display: none;
+}
